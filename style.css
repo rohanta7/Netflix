@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("assets/images/bg.jpg");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  height: 780px;
+  position: relative;
+}
+
+.main .box {
+  height: 780px;
+  width: 100%;
+  opacity: 0.65;
+  top: 0;
+  position: absolute;
+  background-color: black;
+  z-index: 1; /* Set a lower z-index */
+}
+
+nav {
+  display: flex;
+  max-width: 75vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 105px;
+  position: relative; /* Add this to create a stacking context */
+  z-index: 2; /* Ensure nav is above .box */
+}
+
+nav img {
+  color: red;
+  width: 160px;
+  position: relative;
+  z-index: 3;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* Add space between select and button if needed */
+}
+
+.language_dropdown {
+  width: 100px;
+  text-align: center;
+  padding: 6px 15px;
+  font-weight: 600;
+  font-size: 17px;
+  color: white;
+  background-color: rgba(13, 12, 12, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3; /* Ensure select is above .box */
+  appearance: none;
+}
+
+select option {
+  background-color: white;
+  color: black;
+}
+
+nav button {
+  position: relative;
+  z-index: 3; /* Ensure button is above .box */
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  padding: 200px 0px 0px 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+  position: relative;
+  z-index: 2; /* Ensure hero is above .box */
+}
+
+#hero-1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  text-align: center;
+}
+
+#hero-2 {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+#hero-3 {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.separation-main {
+  height: 9px;
+  background-color: rgb(35, 35, 35);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.separation {
+  height: 9px;
+  background-color: rgb(35, 35, 35);
+  margin: 75px 0; /*Add margin to create separation */
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+  background-color: rgba(13, 12, 12, 0.8);
+  border: 1px solid rgba(245, 241, 241, 0.4);
+  border-radius: 4px;
+}
+
+.btn-red {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: red;
+  color: white;
+  padding: 5px 23px 5px 23px;
+  font-size: 26px;
+  border-radius: 4px;
+}
+
+.btn-red-sm {
+  font-size: 15px;
+  padding: 6px 15px;
+  border-radius: 4px;
+  background-color: red;
+  color: rgb(255, 255, 255);
+}
+
+.btn-red .text {
+  margin-right: 20px; /* Adjust the value as needed */
+}
+
+.btn-red .symbol {
+  font-weight: 400; /* Adjust the value as needed */
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px; /* Space between input and button */
+}
+
+input {
+  background-color: rgba(23, 23, 23, 0.4);
+  color: white;
+  font-weight: normal;
+  font-weight: 400;
+  padding: 16px 135px 9px 14px;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  border: 1px solid rgba(245, 241, 241, 0.4);
+  border-radius: 4px;
+  margin-right: 4px;
+  position: relative;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 85vw;
+  color: white;
+}
+
+.first_second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 85vw;
+  color: white;
+}
+
+.secImg0 {
+  position: relative;
+  padding-top: 80px;
+}
+
+.secImg0 img {
+  width: 38vw;
+  height: 60vh;
+  left: 150px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg0 video {
+  position: absolute;
+  top: 183px;
+  left: 240px;
+}
+
+.secImg1 {
+  position: relative;
+  z-index: 10;
+}
+
+.secImg1 img {
+  width: 38vw;
+  height: 60vh;
+  left: 150px;
+  bottom: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.first_secImg1 {
+  display: flex;
+  width: 350px;
+  height: 120px;
+  border-radius: px;
+  background-color: black;
+  border: 1px solid rgba(245, 241, 241, 0.4);
+  border-radius: 15px;
+  left: 299px;
+  bottom: 70px;
+  position: absolute;
+  z-index: 20;
+}
+
+.first_secImg1 img:nth-child(1) {
+  width: 70px;
+  height: 100px;
+  top: 8px;
+  left: 12px;
+  position: relative;
+}
+
+.first_secImg1 img:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  top: 30px;
+  left: 50px;
+  position: relative;
+}
+
+.boxshot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.boxshot span:nth-child(1) {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.boxshot span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(0, 113, 235);
+}
+
+.secImg2 {
+  position: relative;
+}
+
+.secImg2 img {
+  width: 38vw;
+  height: 60vh;
+  left: 150px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg2 video {
+  position: absolute;
+  width: 400px;
+  top: 26px;
+  left: 268px;
+}
+
+.secImg3 {
+  position: relative;
+}
+
+.secImg3 img {
+  width: 38vw;
+  height: 60vh;
+  left: 150px;
+  position: relative;
+  z-index: 10;
+}
+
+.first_text {
+  text-align: left;
+  padding-left: 177px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first_text span:first-child {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.first_text span:nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.faq {
+  max-width: 75vw;
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq h2 {
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+  padding-bottom: 30px;
+}
+
+.question li {
+  list-style-type: none;
+}
+
+.question li label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #2d2d2d;
+  cursor: pointer;
+  position: relative;
+  padding: 2px 0px 2px 30px;
+  margin-bottom: 1px;
+  height: 9vh;
+}
+
+label svg {
+  padding-right: 20px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.question .content {
+  background-color: #2d2d2d;
+  text-align: left;
+  padding: -1px 0px 2px 30px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.question li label:hover {
+  background-color: #414141;
+}
+
+.question .content p {
+  padding: 20px 54px 20px 0px;
+}
+
+.question input[type="radio"]:checked + label + .content {
+  max-height: 600px;
+  padding-left: 20px 30px;
+}
+
+.question input[type="radio"]:checked + label svg {
+  transform: rotate(45deg);
+}
+
+.hero1 {
+  font-family: "Martel Sans", sans-serif;
+  padding: 40px 0px 0px 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+  position: relative;
+  z-index: 2; /* Ensure hero is above .box */
+}
+
+#hero1-3 {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 75vw;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+footer .questions {
+  padding: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.7); /* Change this to the desired color */
+}
+
+footer .place {
+  padding: 25px 0 50px 0;
+  font-size: 14px;
+  font-weight: 400;
+}
